@@ -76,9 +76,11 @@ export default class Presentation extends React.Component {
           <Heading size={6} lineHeight={1.2} textColor="black">
             Alejandro Sánchez
           </Heading>
-          <Text textSize={"0.7em"}>🍕 Chief Pizza Officer, OXID eSales AG</Text>
+          <Text textSize={"0.8em"}>Software Developer</Text>
+          <Text textSize={"0.7em"}>Professional Services, OXID eSales AG</Text>
+
           <Text textSize="1em" lineHeight={3} margin="1em" textColor="gray">
-            29. März 2018
+            29 Mar 2018
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="white">
@@ -116,8 +118,9 @@ export default class Presentation extends React.Component {
           </Heading>
           <Text size={6} fill textColor="black">
             It doesn't make sense because they aren't directly comparable.
-            Angular is a complete framework (including a view layer),<br />React
-            is not (it's a library). This is why React is confusing to
+            Angular is a complete framework (including a view layer),<br />
+            <b>React </b>
+            is not, <b>it's a library</b>. This is why React is confusing to
             understand, it's emerging in an ecosystem of complete frameworks,
             but it's
             <b> mostly the view</b>.
@@ -141,7 +144,7 @@ export default class Presentation extends React.Component {
             <ListItem textSize="1em">the list goes on...</ListItem>
           </List>
           <Text textSize="1em" textAlign="left" textColor="white">
-            have adopted <b>React</b> for many of similar reasons.
+            have adopted <b>React</b> for many of the next similar reasons.
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="red">
@@ -166,7 +169,7 @@ export default class Presentation extends React.Component {
           <Text size={6} textColor="black">
             In addition to Facebook engineering, there are currently{" "}
             <S type="bold">1170 contributors</S> to the project along with a
-            conference series and a regular release cadence.
+            conference series, a lot of courses and a regular releases.
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="white">
@@ -179,12 +182,15 @@ export default class Presentation extends React.Component {
             Performance
           </Heading>
           <Text size={6} textColor="black">
-            Out of the box React uses patterns that renders it somewhat hard to
-            come up with poor code quality to boot, since it eliminates direct
-            interaction with the DOM it doesn’t just replace associate existing
-            view layer like AngularJS, but also additionally removes the
-            necessity for a variety of dependencies like jQuery which may lead
-            to a lower size of the final codebase.
+            Out of the box <b>React </b>uses patterns that makes it very
+            difficult to write poorly performing code. Additionally, since it
+            eliminates direct interaction with the DOM{" "}
+            <em>
+              <b>(virtual DOM) </b>
+            </em>it not only replaces an existing view layer
+            (Angular/Backbone/Ember) it also obviates the need for a number of
+            dependencies like jQuery which can result in an overal{" "}
+            <b>reduction in deployed code size</b>.
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="white">
@@ -192,10 +198,10 @@ export default class Presentation extends React.Component {
             Migration
           </Heading>
           <Text size={6} textColor="black">
-            React can be injected into a very limited section on any existing
-            page notwithstanding of how it’s already been designed and
-            functioning. Which is what permits developers to migrate as quickly
-            or slowly as they’d like.
+             React can be <b>injected</b> into a small area on any existing page
+            regardless of how it’s already built which allows us to{" "}
+            <b>migrate </b> as
+            <b> quickly </b> or slowly as we´d like.
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="white">
@@ -203,47 +209,37 @@ export default class Presentation extends React.Component {
             Code reusability
           </Heading>
           <Text size={6} textColor="black">
-            React is special in its ability to offer great performance in
-            addition to a completely managed rendering cycle for its components;
-            this dramatically improves individual developer’s efficiency. By
-            setting up the creation, distribution and consumption of isolated
-            reusable parts in a much simpler way, it enables developers to have
-            more time to use and create common abstractions. It proves true for
-            lower level parts like clickable buttons and higher level parts like
-            drop-downs.
+            React is specially able to provide performance as well as a fully
+            managed <b>rendering lifecycle</b> for components.
+          </Text>
+
+          <Text size={6} textColor="black">
+            This dramatically
+            <b> improves</b> individual <b>developer’s efficiency</b>.
+          </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="white">
+          <Heading size={3} textColor="red" caps>
+            Save Time
+          </Heading>
+          <Text size={6} textColor="black">
+            By making the creation, distribution, and consumption of isolated
+            <b> reusable components </b> in a much simpler way, developers have
+            more time to <b>use and create</b> common abstractions. This can be
+            done in the low level elements like buttons and also in high level
+            elements such as accordions.
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="white">
           <Heading size={3} textColor="red" caps>
             SEO
           </Heading>
-          <Text size={6} textColor="black">
-            Improved largely by having a totally rendered page from the server
-            to the browser. React was designed with this kind of optimization in
-            mind. It uses Node to render on the client of the server. Similar
-            tools do provide this server aspect for rendering, however, they
-            need a lot of unstable hacks and a considerable quantity of
-            developer support to keep up. React has the potential to modify
-            build tooling and scale back maintenance budgets.
-          </Text>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="white">
-          <Heading size={1} textColor="red" caps>
-            Develop Efficiently
-          </Heading>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="white">
-          <Heading size={3} textColor="red" caps>
-            Performance
-          </Heading>
-          <Text size={6} textColor="black">
-            React can be injected into a very limited section on any existing
-            page notwithstanding of how it’s already been designed and
-            functioning. Which is what permits developers to migrate as quickly
-            or slowly as they’d like. However, it’s important to note that React
-            needs a runtime library to run properly thus slower and gradual
-            migration has a somewhat negative impact on page weight until
-            deprecated previous libraries are deleted.
+          <Text size={6} fill textColor="black">
+             SEO is improved by sending a completely rendered page from the
+            server to the browser. React is designed with SEO in mind, rendering
+            on either the client or the server, using Node or other tools. React
+            has the potential to simplify build tooling and reduce maintenance
+            costs.
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="white">
@@ -253,26 +249,27 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="white">
           <Heading size={3} textColor="red" caps>
-            Combine Technologies better
+            It makes writing Code easier{" "}
           </Heading>
           <Text size={6} textColor="black">
-            React mixes HTML and JavaScript following the principle that they go
-            along all the time. Separating them is more akin to separating
-            technologies than considerations. This idea is extended more to
-            incorporate CSS, which removes a myriad of problems related to CSS
-            development such as global namespace, and scope/variable isolation.
+            React uses a special syntax called <b>JSX</b>, which allows us to{" "}
+            <b>mix HTML with JavaScript</b> following the principle that they
+            are inevitably tightly coupled and that separating them is
+            separating technologies and not concerns.
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="white">
           <Heading size={3} textColor="red" caps>
-            Improved Debugging speed
+            Faster Error Isolation{" "}
           </Heading>
           <Text size={6} textColor="black">
-            Browser Developer tools unique to React have been set up by Facebook
-            in order to provide data regarding what exact section and what
-            snippet of code was called on to generate every specific bit of UI.
-            This facilitates the process of looking for errors and simply makes
-            a developer’s life a little easier.
+            Facebook has provided React specific <b>developer tools</b> for the
+            browser that provides information about which component and what
+            data was used to generate a piece of UI. This facilitates the
+            process of looking for errors and simply{" "}
+            <em>
+              <b>makes a developer’s life a little bit easier</b>
+            </em>.
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="white">
@@ -296,12 +293,11 @@ export default class Presentation extends React.Component {
             Easier to test
           </Heading>
           <Text size={6} textColor="black">
-            React’s elementary abstraction, the component, takes in data and
-            outputs an illustration of the Document Object Model with no further
-            adverse effects. This allows developers not to rely on consumption,
-            instead allowing users to create states in the DOM making React
-            components easier to break down and test. Finally, we can move on to
-            more effective organization with
+             A component, React’s fundamental abstraction takes in data an
+            argument and outputs a representation of the DOM with no additional
+            side effects. By removing reliance on consuming and creating state
+            stored in the DOM these components are both more atomic and more
+            testable.
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="white">
@@ -314,11 +310,10 @@ export default class Presentation extends React.Component {
             Quicker Onboarding
           </Heading>
           <Text size={6} textColor="black">
-            Having such an extremely small API combined with a declarative
-            syntax and UI componentization makes it so much faster to welcome
-            new developers aboard your organization. While also making it easier
-            to switch technologies on an on-demand and per-project basis for a
-            truly Agile approach.
+             React’s API is very small. Combined with it’s declarative syntax
+            and componentization of UI elements makes it much faster to onboard
+            new developers. We can release new client features faster and with
+            more confidence for a truly Agile approach.
           </Text>
         </Slide>
         <Slide transiti on={["fade"]} bgColor="white" textColor="white">
@@ -361,10 +356,10 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="red" textColor="black">
           <BlockQuote>
             <Quote>
-              any application that can be written in JavaScript, will eventually
-              be written in JavaScript.
+              React has exceeded our requirements and enabled us to build a
+              tremendous foundation on which to innovate the user experience
             </Quote>
-            <Cite>Atwood's Law</Cite>
+            <Cite>Netflix</Cite>
           </BlockQuote>
         </Slide>
         <Slide transition={["fade"]} bgColor="white" textColor="black">
